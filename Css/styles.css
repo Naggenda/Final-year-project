@@ -1,41 +1,26 @@
-.container{
-    text-align: center;
-    padding: 200px 0px;
-}
-.row{
-    justify-content: space-around;
-}
-.btn-class {
-    border: 1px solid;
-    width: 20%;
-    height: 100px;
-    text-align: center;
-    padding: 30px 0px;
-    background-color: white;
-    box-shadow: 10px 10px 5px #aaaaaa;
+section{
+    background-image: url(../assets/back.jpg);
+    height: 100vh;
+    background-size: cover;
 }
 
-.register {
-    border: 1px solid;
-    width: 20%;
-    height: 100px;
-    text-align: center;
-    padding: 30px 0px;
+.navbar-collapse {
+    flex-grow: 0;
+    align-items: center;
 }
 
-#myVideo {
-    position: fixed;
-    right: 0;
-    bottom: 0;
-    min-width: 100%;
-    min-height: 100%;
-  }
 
-  .content {
-    position: fixed;
-    bottom: 0;
-    /* background: rgba(0, 0, 0, 0.5); */
-    /* color: #f1f1f1; */
-    width: 100%;
-    padding: 20px;
-  }
+.main-section{
+    padding-top: 50px;
+}
+/* .search{
+
+} */
+
+input{
+    width: 80%; 
+    border-radius: 15px; 
+    outline: none; 
+    padding: 5px 15px;
+    border: none;
+}
