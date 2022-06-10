@@ -12,8 +12,17 @@ section{
     margin-top: 7rem! important;
 }
 
-@media screen and (min-width: 320px){
-   
+@media screen and (max-width: 475px){
+    .mt-5{
+        margin-top: 0rem! important;
+    }
+    .navbar {
+        padding: 5px 0px 0px;
+    }
+    section{
+        background: green;
+        height: auto;
+    }
 }
 
 .navbar-collapse {
