@@ -1,5 +1,5 @@
 section{
-    background-image: url(../assets/back.jpg);
+    background-image: url(../assets/20220608_155404.jpg);
     height: 100vh;
     background-size: cover;
 }
@@ -12,7 +12,18 @@ section{
     margin-top: 7rem! important;
 }
 
-@media screen{}
+@media screen and (min-width: 320px){
+    .mt-5{
+        margin-top: 0rem! important;
+    }
+    .navbar {
+        padding: 5px 0px 0px;
+    }
+    section{
+        background: green;
+        height: auto;
+    }
+}
 
 .navbar-collapse {
     flex-grow: 0;
@@ -66,6 +77,24 @@ input{
   }
   
   /* Modal Content/Box */
+  .id02 {
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    left: 40%;
+    top: 50px;
+    /* width: 100%; */
+    display: none;
+    box-shadow: 0 0 10px;
+    max-width: 400px;
+    width: 100%;
+    background: #fff;
+    padding: 25px 30px;
+    border-radius: 7px;
+
+   
+}
   .modal-content {
     background-color: #fefefe;
     margin: 5% auto 15% auto;
@@ -119,108 +148,125 @@ input{
 
   /* register form */
 
-  #id02 {
-      display: none;
-      position: fixed;
-    /* Stay in place */
-     z-index: 1;
-    /* Sit on top */
-    left: 0;
-    top: 0;
-    width: 100%;
-    /* Full width */
-    height: 100%;
-    /* Full height */
-    overflow: auto;
-    background-color: #fff;
-    /* display: none; */
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
-    width: 400px;
-    max-width: 100%;
+  
+
+.id02 .close{
+cursor: pointer;
+background-color: rgb(160, 60, 60);
+border-radius: 50%;
+padding: 5px 10px;
+color: #fff;
+
+}
+
+
+.id02 .title{
+    font: size 100px;
+    font-weight: 50px;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    text-align: center;  
+    display: flex; 
+    justify-content: space-around;
+}
+
+
+.id02 form .user-details{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: unset;
+    align-items: center;
+    margin: 20px 0px 12px 0px; 
+    overflow-y: scroll;
+    
+}    
+
+form .user-details .input-box{
+    margin-bottom: 15px;
+    width: 80%;
+   
+}   
+
+.user-details .input-box details{
+    display:block;
+    font-weight:500;
+    margin-bottom: 5px;
     
 }
 
-.header{
-    background-color: #f7f7f7;
-    border-bottom: 1px solid #f0f0f0;
-    padding: 20px 40px;
-    display: flex;
+
+
+.user-details .input-box input{
+    height: 45px;
+    width: 100%;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding-left: 15px;
+    font-size: 16px;
+    border-bottom-width: 2px ;
+    transition: all 0.3s ease;
+}
+
+.user-details .input-box input:focus,
+.user-details .input-box input:valid{
+    border-color:#3ebd3a;
+
+   }
+
+ 
+   .user-details .input-box input:focus,
+.user-details .input-box input:invalid{
+    border-color:#853232;
+}
+
+form .button {
+    height:45px;
+    margin:45px 0;
+   
 
 }
 
-.header h2{
-    margin: 0;
-}
-  .form{
-    padding: 30px 40px;
-}
 
-.form-control{
-    margin-bottom: 10px;
-    padding-bottom: 20px;
-    position: relative;
+form .button input{
+    height: 100%;
+    width: 50%;
+    outline: none;
+    color:#fff;
     border: none;
+    background: #3ebd3a; 
+    font-size: 18px;
+    font-weight:500;
+    letter-spacing: 1px;
+    border-radius: 5px;
+    margin-left: 74px;
+    transition: ease-out 0.7s;
 }
 
-.form-control label{
-    display: inline-block;
-    margin-bottom: 5px;
 
+form .button input:hover{
+     background :linear-gradient(-90deg ,#ffc400ad,  #3ebd3a);
+     cursor: pointer;
+     transition: ease-in 0.7s;
+     
 }
 
-.form-control input{
-    border: 2px solid #f0f0f0;
-    border-radius: 4px;
-    display: block;
-    font-family: inherit;
-    font-size: 14px;
-    padding: 10px;
+
+
+@media (max-width: 584px){
+.id02{
+max-width: 100%;
+}
+
+form .user-details .input-box{
+    margin-bottom: 15px;
     width: 100%;
 }
 
-.form-control i{
-    visibility: hidden;
-    position: absolute;
-    top: 40px;
-    right: 10px;
+.id02 form .user-details{
+    max-height: 700px;
+    overflow-y: scroll;
 }
-
-.form-control small{
-    visibility: hidden;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-}
-
-.form button{
-    background-color: #8e44ad;
-    border: 2px solid #8e44ad;
-    color: #fff;
-    padding: 10px;
-    width: 100%;
-    border-radius: 4px; 
-}
-
-.form-control.success input{
-    border-color: #2ecc71;
-}
-
-.form-control.error input{
-    border-color: #e74c3d;
-}
-
-.form-control.success i.fa-check-circle{
-    color: #2ecc71;
-    visibility: visible;
-}
-
-.form-control.error i.fa-exclamation-circle{
-    color: #e74c3d;
-    visibility: visible;
-}
-
-.form-control.error small{
-    color: #e74c3d;
-    visibility: visible;
 }

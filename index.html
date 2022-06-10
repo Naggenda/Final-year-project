@@ -13,7 +13,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
 
   <link rel="stylesheet" href="./Css/styles.css" />
-  <title>Crop Pest and Disease advisory | system</title>
+  <title>Crop Pest and Disease advisory and notification | system</title>
 </head>
 
 <body>
@@ -96,45 +96,46 @@
   </div>
   <!-- =============End Login section============================= -->
   <!-- =============Start Register section=============================== -->
-  <div class="register" id="id02">
-    <div class="header">
-      <h2>Create account</h2>
-    </div>
-    <form class="form" id="form">
-      <div class="form-control">
-        <label>Username</label>
-        <input type="text" placeholder="full name" id="username">
-        <i class="fas fa-check-circle"></i>
-        <i class="fas fa-exclamation-circle"></i>
-        <small>Error message</small>
+  <div class="id02" id="id02">
+      <div class="title">
+          <h3>CREATE ACCOUNT</h3>
+          <span onclick="document.getElementById('id02').style.display='none'" class="close">&times;</span>
       </div>
 
-      <div class="form-control">
-        <label>Email</label>
-        <input type="email" placeholder="example@gmail.com" id="email">
-        <i class="fas fa-check-circle"></i>
-        <i class="fas fa-exclamation-circle"></i>
-        <small>Error message</small>
-      </div>
+      <form action="#" method="GET" id="register">
+          <div class="user-details">
 
-      <div class="form-control">
-        <label>Password</label>
-        <input type="password" placeholder="password" id="password">
-        <i class="fas fa-check-circle"></i>
-        <i class="fas fa-exclamation-circle"></i>
-        <small>Error message</small>
-      </div>
+              <div class="input-box">
+                  <span class="details">username</span>
 
-      <div class="form-control">
-        <label>Confirm Password</label>
-        <input type="password" placeholder="password" id="password2">
-        <i class="fas fa-check-circle"></i>
-        <i class="fas fa-exclamation-circle"></i>
-        <small>Error message</small>
-      </div>
+                  <input type="text" id="username" placeholder="Enter username" length="8" required>
+              </div>
 
-      <button type="submit">Submit</button>
-    </form>
+              <div class="input-box">
+                  <span class="details">email</span>
+
+                  <input type="email" id="email" placeholder="Enter your email" required>
+              </div>
+
+              <div class="input-box">
+                  <span class="details"> password</span>
+
+                  <input type="password" id="password" placeholder="Enter password" required>
+              </div>
+              <div class="input-box">
+                  <span class="details">confirm password</span>
+
+
+                  <input type="password" id="confirmPassword" placeholder="confirm password" required>
+              </div>
+          </div>
+
+          <div class="button">
+              <input type="submit" value="register">
+          </div>
+      </form>
+
+      <p id="errors" style="text-align:center; color:red"></p>
   </div>
   <!-- ===============End Register section -->
 
