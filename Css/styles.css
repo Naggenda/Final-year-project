@@ -1,4 +1,4 @@
-section{
+.full-page{
     background-image: url(../assets/20220608_155404.jpg);
     height: 100vh;
     background-size: cover;
@@ -19,9 +19,13 @@ section{
     .navbar {
         padding: 5px 0px 0px;
     }
-    section{
-        background: green;
+    .full-page{
+        background-image: url(../assets/small.jpg);
+        background-size: cover;
         height: auto;
+    }
+    .navbar-collapse{
+        flex-grow: 1! important;
     }
 }
 
